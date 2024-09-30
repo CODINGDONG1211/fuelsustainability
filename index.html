@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fuel Sustainability Calculator</h1>
+
+        <form id="sustainability-form">
+            <label for="calorific_value">Calorific Value (0-100):</label>
+            <input type="number" name="calorific_value" id="calorific_value" step="any" required>
+
+            <label for="density">Density (0-100):</label>
+            <input type="number" name="density" id="density" step="any" required>
+
+            <label for="viscosity">Viscosity (0-100):</label>
+            <input type="number" name="viscosity" id="viscosity" step="any" required>
+
+            <label for="emissions">Emissions (0-100):</label>
+            <input type="number" name="emissions" id="emissions" step="any" required>
+
+            <label for="sulfur_content">Sulfur Content (0-100):</label>
+            <input type="number" name="sulfur_content" id="sulfur_content" step="any" required>
+
+            <label for="flash_point">Flash Point (0-100):</label>
+            <input type="number" name="flash_point" id="flash_point" step="any" required>
+
+            <label for="plastic_feedstock">Plastic Feedstock (1 for Renewable, 0 for Non-renewable):</label>
+            <input type="number" name="plastic_feedstock" id="plastic_feedstock" step="any" required>
+
+            <label for="lca">LCA (Life Cycle Assessment) (0-100):</label>
+            <input type="number" name="lca" id="lca" step="any" required>
+
+            <button type="submit">Calculate Sustainability Score</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
